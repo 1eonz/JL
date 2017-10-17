@@ -1,0 +1,260 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/css.css">
+<link rel="stylesheet" href="css/animate.css">
+<script src="js/jquery-1.11.1.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/js.js"></script>
+    
+</head>
+
+<body data-spy="scroll" data-target="#myNavbar"  data-offset="300">
+	<!--页面载入动画-->
+	<div id="loading">
+		<div id="loading-center">
+			<div id="loading-center-absolute">
+				<div id="object"></div>
+			</div>
+		</div>
+	</div>
+    <script>
+    $(window).load(function() {
+	//$("#loading").delay(2000).fadeOut(500);
+	
+	$("#loading").fadeOut(500);
+	
+	})	
+    </script>
+    
+    <!--导航页-->
+	<nav id="myNavbar" class="navbar  navbar-inverse navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">logo</a>
+				</div>
+               
+				<div class="collapse navbar-collapse">
+					<ul class="nav navbar-nav navbar-right">
+						<li class="active"><a href="#home">首页</a></li>
+						<li><a href="#feature">项目经验</a></li>
+						<li><a href="#advantage">专业技能</a></li>
+						<li><a href="#contact">联系方式</a></li>
+					</ul>
+				</div>
+			</div>
+	</nav>
+
+
+<div id="box">
+
+
+        <!--home栏-->
+    <div id="home" class="pos">
+		<div class="overlay">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-1"></div>
+                    
+					<div class="col-md-10" data-wow-delay="0.3s">
+						<h1 class="fadeInDown animated">李智</h1>
+                        <h3><span>应聘职位：</span>前端开发实习生</h3>                                                             <!--响应式标题-->
+						<p class="bounceInLeft animated">2014.09-至今&nbsp;&nbsp;&nbsp;&nbsp;电子科技大学成都学院&nbsp;&nbsp;&nbsp;&nbsp;通信工程&nbsp;&nbsp;&nbsp;&nbsp;本科</p>   <!--响应式段落-->
+                      
+		
+					</div>
+                    
+					<div class="col-md-1"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+    	<!--插页栏-->
+    <div id="divider">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-4 bounceInLeft animated" >
+                	<img src="img/div.png" class="img-responsive" alt="feature img">
+                	
+					<h3>排名</h3>
+					<p>15/216</p>
+				</div>
+				<div class="col-md-4 bounceInRight animated" >
+                	<img src="img/div.png" class="img-responsive" alt="feature img">
+					<h3>奖学金</h3>
+					<p>二等奖学金</p>
+				</div>
+                <div class="col-md-4 bounceInRight animated" >
+                	<img src="img/div.png" class=" img-responsive" alt="feature img">
+					<h3>证书</h3>
+					<p>蓝桥杯JAVA三等奖</p>
+                    <p>成都云尚游科技前端实训优秀实训生</p>
+				</div>
+			</div>
+        </div>
+	</div>
+    	<!--项目-->
+    <div id="feature" class="pos">
+			<div class="container">
+				<div class="row">
+                	<div class="col-md-12" style="text-align:center; margin-bottom:20px;">
+						<h2>项目经验</h2>
+					</div>
+					<div class="col-md-6">
+						<h2 class="text-uppercase" style="text-align:center;">个人简历</h2>
+						<p>负责整个页面的设计与开发</p>
+						<p><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;&nbsp;主要使用bootstrap、JQuery开发的一个响应式的个人简历</p>
+						<p><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;&nbsp;并且加入CSS3的部分内容实现网页的一些动态效果</p>
+					</div>
+					<div class="col-md-6">
+						<!--<img src="img/pro1.png" class="img-responsive" alt="feature img">-->
+                        <figure>
+        					<img src="img/pro1.png"  class="img-responsive" alt="img01"/>
+        					<figcaption>
+            				<h2>点击查看详情</h2>
+            				<p><a href="#"><span class="glyphicon glyphicon-hand-up"></span></a></p>            
+        					</figcaption>
+    					</figure>
+					</div>
+				</div>
+			</div>
+	</div>
+    
+    <div id="feature1">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+                        <figure>
+        					<img src="img/pro2.png"  class="img-responsive" alt="img02"/>
+        					<figcaption>
+            				<h2>点击查看详情</h2>
+            				<p><a href="../../yx/yx1.html"><span class="glyphicon glyphicon-hand-up"></span></a></p>            
+        					</figcaption>
+    					</figure>
+					</div>
+					<div class="col-md-6">
+						<h2 class="text-uppercase">别踩白块游戏</h2>
+						<p>负责整个页面的开发与简单的设计</p>
+						<p><span class="glyphicon glyphicon-heart-empty"></span>&nbsp;&nbsp;使用js原生面向对象思想编写，运用定时器，元素增减与DOM操作完成的简单游戏</p>
+					</div>
+				</div>
+			</div>
+	</div>
+    	<!--专业技能-->
+    <div id="advantage" class="pos">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h2>专业技能</h2>
+					</div>
+					<div class="col-lg-3 col-sm-6">
+						<div class="advantage">
+							<div class="advantage-title">
+								<h4>计算机语言</h4>
+							</div>
+							<ul>
+								<li>HTML</li>
+                                <li>CSS</li>
+                                <li>JavaScript</li>
+                                <li>JQuery</li>
+                                <li>Bootstrap</li>
+                                <li>JAVA SE</li>
+							</ul>
+							<button class="btn btn-primary">以上所有</button>
+						</div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+						<div class="advantage">
+							<div class="advantage-title">
+								<h4>数据库软件</h4>
+							</div>
+							<ul>
+								<li>MySQL</li>
+							</ul>
+							<button class="btn btn-primary">以上所有</button>
+						</div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+						<div class="advantage">
+							<div class="advantage-title">
+								<h4>编程软件</h4>
+							</div>
+							<ul>
+								<li>Adobe Dreamweaver</li>
+                                <li>eclipse</li>
+                                <li>VC++</li>
+							</ul>
+							<button class="btn btn-primary">以上所有</button>
+						</div>
+                     </div>
+                     <div class="col-lg-3 col-sm-6">
+						<div class="advantage">
+							<div class="advantage-title">
+								<h4>工具软件</h4>
+							</div>
+							<ul>
+								<li>Adobe  PhotoshopCC2017</li>
+                                <li>Word</li>
+                                <li>PowerPoint</li>
+                                <li>Excel</li>
+							</ul>
+							<button class="btn btn-primary">以上所有</button>
+						</div>
+                     </div>
+                     
+                     
+                        
+					
+				</div>
+			</div>
+	</div>
+    <!--联系栏-->
+    <div id="contact" class="pos">
+			<div class="overlay">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 left">
+							<h2>联系方式</h2>
+							<p></p>
+							<div class="address">
+								<p><span class="glyphicon glyphicon-phone-alt"></span>&nbsp;&nbsp;&nbsp;138-8179-4807</p>
+								<p><span style=" margin-top:20px;" class="glyphicon glyphicon-folder-open"></span>&nbsp;&nbsp;&nbsp;13881794807@163.com</p>
+							</div>
+						</div>
+						<div class="col-md-6 right">
+							<div class="contact-form">
+								<form action="#">
+									<div class="col-md-6">
+										<input type="text" class="form-control" placeholder="姓名">
+									</div>
+									<div class="col-md-6">
+										<input type="email" class="form-control" placeholder="邮箱">
+									</div>
+									<div class="col-md-12">
+										<input type="text" class="form-control" placeholder="主题">
+									</div>
+									<div class="col-md-12">
+										<textarea class="form-control" placeholder="内容" rows="4"></textarea>
+									</div>
+									<div class="col-md-8 col-md-push-2">
+										<input type="submit" class="form-control text-uppercase" value="发送">
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+</div>
+	<p id="top"><span class="glyphicon glyphicon-upload"></span></p>
+</body>
+</html>

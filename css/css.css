@@ -1,0 +1,93 @@
+@charset "utf-8";
+/* CSS Document */
+#box{ overflow:hidden; width:100%;}
+#con{ margin:0; padding:0; width:;  }
+#con li{ width:100%; list-style:none;float:left; overflow:hidden;}
+
+#loading{background-color: #FFF;height: 100%;width: 100%;position: fixed;z-index: 999999;margin-top: 0px;top: 0px;}
+	#loading-center{width: 100%;height: 100%;position: relative;}
+	#loading-center-absolute {position: absolute;left: 50%;top: 50%;height: 200px;width: 200px;margin-top: -100px;margin-left: -100px;}
+	#object{width: 80px;height: 80px;background-color: #000;-webkit-animation: animate 1s infinite ease-in-out;animation: animate 1s infinite ease-in-out;margin-right: auto;margin-left: auto;margin-top: 60px;}
+	@-webkit-keyframes animate {
+	  0% { -webkit-transform: perspective(160px); }
+	  50% { -webkit-transform: perspective(160px) rotateY(-180deg); }
+	  100% { -webkit-transform: perspective(160px) rotateY(-180deg) rotateX(-180deg); }
+	}
+
+	@keyframes animate {
+	  0% { 
+	    transform: perspective(160px) rotateX(0deg) rotateY(0deg);
+	    -webkit-transform: perspective(160px) rotateX(0deg) rotateY(0deg); 
+	  } 50% { 
+	    transform: perspective(160px) rotateX(-180deg) rotateY(0deg);
+	    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(0deg) ;
+	  } 100% { 
+	    transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+	    -webkit-transform: perspective(160px) rotateX(-180deg) rotateY(-180deg);
+	  }
+	}
+	
+nav input{float:left; height:51px; border:none; color:#999; cursor: pointer;}
+nav #lz{ margin-left: 30%; background:#080808;}
+nav #cdy{ margin-left:10px;  background:#222222;}
+	
+#home{ padding-top:51px; text-align:center; background: url(../img/home-1.jpg) no-repeat 0px -2400px; color:#FFF;}
+.overlay{ padding-bottom:70px; padding-top:70px;}
+
+#divider{text-align: center;padding-top: 80px; padding-bottom: 80px;}
+#divider .div{ }
+
+#feature{background: #f8f8f8; padding-top: 80px; padding-bottom: 80px; opacity:0; }
+#feature p{padding-top: 10px;}
+#feature span {float: left;}
+#feature1{background: #f8f8f8; padding-top: 80px; padding-bottom: 80px;  opacity:0}
+#feature1 p{padding-top: 10px;}
+#feature1 span {float: left;}
+
+#advantage {background: #f8f8f8; text-align: center;padding-top: 80px; padding-bottom: 80px; opacity:0;}
+#advantage h2{ padding-bottom: 60px; }
+#advantage .advantage { background: #fff; }
+#advantage .advantage .advantage-title{ background:#666; color: #fff; font-weight: bold; padding: 30px;}
+#advantage .advantage .advantage-title p{font-size: 20px;}
+#advantage .advantage ul{padding: 0; margin: 0;}
+#advantage .advantage ul li{ display: block; list-style: none;padding: 16px; }
+#advantage .advantage .btn{background: transparent;border: 1px solid #666;border-radius: 0px;color: #666;font-weight: bold; padding-right: 40px;padding-left: 40px;margin-top: 20px; margin-bottom: 30px;transition: all 1s ease;}
+#advantage .advantage .btn:hover {background: #666;color: #fff;}
+
+#contact { background: url(../img/home-2.jpg) no-repeat;  cover;color: #fff; }
+#contact h2 {  padding-bottom: 10px; }
+#contact .address {  padding-top: 20px;  }
+#contact .contact-form { padding-top: 40px;}
+#contact .form-control { border: none; margin-bottom: 20px; }
+#contact input {height: 50px;}
+#contact input[type="submit"]{ background: #28a7e9;color: #fff; font-weight: bold; transition: all 0.3s ease; }
+#contact input[type="submit"]:hover {background: #107DB6;}
+#contact .left{ opacity:0;}
+#contact .right{ opacity:0;}
+
+
+
+
+
+
+figcaption a{border:1px solid #fff;margin-top: 1em;display: inline-block;color: #fff;padding: 5px 10px; transition:0.5s;}
+
+figcaption a:hover{text-decoration: none;padding: 5px 30px; color: #fff;}
+
+figcaption { position: absolute;top: 0px; right: 0px; bottom: 0px; left: 0px; padding: 15%; text-align:center; }
+
+figcaption::before { position: absolute; top: 30px; right: 30px; bottom: 30px; left: 30px; border: 1px solid #fff; content: ''; }
+
+figure h2 { color:#999; margin: 0; line-height: 1em; -webkit-transition: -webkit-transform 0.35s; transition: transform 0.35s; -webkit-transform: translate3d(0,100%,0); transform: translate3d(0,100%,0);}
+
+figure figcaption::before, figure p { opacity: 0; -webkit-transition: opacity 0.35s, -webkit-transform 0.35s; transition: opacity 0.35s, transform 0.35s; -webkit-transform: scale(0); transform: scale(0); }
+
+figure:hover h2 { -webkit-transform: translate3d(0,0,0); transform: translate3d(0,0,0);}
+
+figure:hover figcaption::before, figure:hover p { opacity: 1; -webkit-transform: scale(1); transform: scale(1);}
+
+figure:hover figcaption { background-color: rgba(0,0,0,0.8); }
+
+figure:hover img { opacity: 0.4; }
+
+#top{ display: none; font-size: 35px; position: fixed; right: 3%; bottom:3%; color:#000; line-height: 0; cursor: pointer;}
